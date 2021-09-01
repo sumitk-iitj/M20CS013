@@ -97,6 +97,7 @@ CMD ["npm", "start"]
 ```
 
 <u>**Deploying the Application in Docker**</u>
+
 Now, all the elements are set in place. The final step of this entire process is to create the container and run the app along with it.
 - The first thing to do is to build the image. The is done with the help of the build instruction. It makes use of the dockerfile that is created and the set of files in its path. We can make use of the -t flag, which helps us to tag the image that we create.
 ```sh
@@ -113,7 +114,7 @@ CONTAINER ID   IMAGE                    COMMAND       CREATED          STATUS   
 c1923f4ac9c2   samanyu13/node-web-app   "npm start"   27 seconds ago   Up 26 seconds               0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   great_kilby
 c2fcf608be1a   samanyu13/node-web-app   "npm start"   16 minutes ago   Exited (0) 6 minutes ago                                                relaxed_shirley
 ```
-We can see that the fisr one in the list is up and running in port 3000. The output is shown below.
+We can see that the ffirst one in the list is up and running in port 3000. The output is shown below.
 ![Using Docker](/public/docker.png)
 
 <u>**System Configuration**</u>
